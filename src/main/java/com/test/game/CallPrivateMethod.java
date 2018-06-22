@@ -16,6 +16,14 @@ public class CallPrivateMethod {
 				m.setAccessible(true);
 				String s= (String)m.invoke(c.newInstance(), 1);
 				System.out.println(s);
+				
+				
+				Class cc = Class.forName("com.test.game.PrivateMethod");
+				Method mm =  cc.getDeclaredMethod("privateMethod", Integer.class);
+				mm.setAccessible(true);
+				System.out.println(mm.invoke(cc.newInstance(), 2));
+				
+				
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
