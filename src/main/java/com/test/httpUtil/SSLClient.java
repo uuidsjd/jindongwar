@@ -19,7 +19,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 
 /**
- * @author 晋东
+ * @author 
  *
  */
 public class SSLClient extends DefaultHttpClient{
