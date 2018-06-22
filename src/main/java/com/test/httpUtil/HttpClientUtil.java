@@ -45,9 +45,9 @@ public class HttpClientUtil {
 	}
 	
 	public static void main(String[] args) {
-		String url = "https://baidu.com";
+		String url = "https://www.baidu.com/s?tn=98012088_5_dg&ch=13&wd=git-receive-pack%20not";
 		String str = HttpClientUtil.doPost(url, "zhongguo", "utf-8");
-		System.out.println(str);
+		System.out.println("==="+str);
 	}
 	
 	
