@@ -6,6 +6,7 @@ package com.test.httpUtil;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.ResourceBundle;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
@@ -55,6 +56,14 @@ public class SSLClient extends DefaultHttpClient{
 		ClientConnectionManager ccm = this.getConnectionManager();
 		SchemeRegistry sr = ccm.getSchemeRegistry();
 		sr.register(new Scheme("https", 443, ssf));
+	}
+	
+	public static void main(String[] args) {
+		
+		ResourceBundle rb = ResourceBundle.getBundle("applications");
+		System.out.println(rb.getString("alias"));
+		
+		
 	}
 
 }

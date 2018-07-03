@@ -127,6 +127,10 @@ $('.select ul li').hover(
  <div>
  	<div><a href="downFile.do">下载文件</a></div>
  </div>
+ 
+  <div>
+ 	<div><a href="loadFile.do">上传图片</a></div>
+ </div>
 <%-- <% String req = (String)request.getParameter("username1"); %> --%>
 <%-- <% session.setAttribute("username2", (String)request.getParameter("username1")); %> --%>
 <%-- <% session.setAttribute("password2", (String)request.getParameter("password1")); %> --%>

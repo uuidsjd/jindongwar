@@ -28,7 +28,7 @@ public class MD5 {
 	
 	private static String[] strForMd5 = {"0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"};
 	
-	private MD5(){
+	public MD5(){
 		
 	}
 	
@@ -50,7 +50,7 @@ public class MD5 {
 		return sb.toString();
 	}
 	
-	private static String str2md5(String pw){
+	public static String str2md5(String pw){
 		String resultStr = null;
 		try {
 			resultStr = new String(pw);
@@ -63,22 +63,22 @@ public class MD5 {
 		return resultStr;
 	}
 	
-	public static void main(String[] args) {
-		String ms = "sjd";
-		String resultms = str2md5(ms);
-		System.out.println(resultms);
-		//7815696ecbf1c96e6894b779456d330e
-//		String $_1 = new BASE64Encoder().encodeBuffer(ms.getBytes());
-//		try {
-//			byte[] $_2 = new BASE64Decoder().decodeBuffer($_1);
-//			String $_3 = new String($_2);
-//			log.info("原文"+ms);
-//			log.info("加密"+$_1);
-//			log.info("解密"+$_3);
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-	}
+//	public static void main(String[] args) {
+//		String ms = "sjd";
+//		String resultms = str2md5(ms);
+//		System.out.println(resultms);
+//		//7815696ecbf1c96e6894b779456d330e
+////		String $_1 = new BASE64Encoder().encodeBuffer(ms.getBytes());
+////		try {
+////			byte[] $_2 = new BASE64Decoder().decodeBuffer($_1);
+////			String $_3 = new String($_2);
+////			log.info("原文"+ms);
+////			log.info("加密"+$_1);
+////			log.info("解密"+$_3);
+////		} catch (IOException e) {
+////			e.printStackTrace();
+////		}
+//	}
 	
 	
 }
